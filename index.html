@@ -1,0 +1,44 @@
+<!doctype html>
+
+<head>
+  <title>Connect 4</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class='wrapper'>
+    <h2 id="player-turn"></h2>
+    <div class='container'></div>
+    <div id='information'>
+      <div class='player-container'>
+        <!-- Player 1 -->
+        <h3 class='player-one'></h3>
+      </div>
+      <div class='player-container'>
+        <!-- Player 2 -->
+        <h3 class='player-two'></h3>
+      </div>
+    </div>
+    <h3>Score Card</h3>
+    <div id="score">Player 1: <span id='player-one-score'>0</span> <br />
+      Player 2: <span id='player-two-score'>0</span> <br />
+    </div>
+  </div>
+  </div>
+  <div class='start-screen'>
+    <h1 id="message"></h1>
+    <div id='player-names'>
+      <input type="text" id="player-one-name" name="name" placeholder="Enter player name" />
+      <input type="color" id="player-one-color" name="color" value="#FA0F0F" />
+      <input type="text" id="player-two-name" name="name" placeholder="Enter player name" />
+      <input type="color" id="player-two-color" name="color" value="#F6FA0F" />
+    </div>
+    <button id="start"><span>Start Game</span></button>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

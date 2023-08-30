@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+  color: #050505;
+}
+
+body::before {
+  content: '';
+  background: url('https://www.bigw.com.au/medias/sys_master/images/images/he2/h59/15345905664030.jpg') no-repeat center center fixed;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .5;
+}
+
+.wrapper {
+  width: 33.75em;
+  background-color: rgba(255, 255, 255, .0);
+  position: absolute;
+  padding: 2em;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 1.25em;
+  border-radius: 0.5em;
+}
+
+.container {
+  margin: 1.25em auto;
+  width: 33.75em;
+  border-radius: 0.6em;
+  overflow: hidden;
+  background-color: #416cea;
+}
+
+#information {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.player-containers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-one:before {
+  content: "";
+  display: inline-block;
+  width: 3.12em;
+  height: 3.12em;
+  border-radius: 50%;
+  background-color: var(--player-one-color);
+
+}
+
+.player-two:before {
+  content: "";
+  display: inline-block;
+  width: 3.12em;
+  height: 3.12em;
+  border-radius: 50%;
+  background-color: var(--player-two-color);
+
+
+}
+
+#player-turn {
+  margin: 1em 0;
+  text-align: right;
+}
+
+#player-turn span {
+  font-weight: 600;
+}
+
+.start-screen {
+  position: absolute;
+  color: #050505;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url('https://www.bigw.com.au/medias/sys_master/images/images/he2/h59/15345905664030.jpg') no-repeat center center fixed;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.start-screen button {
+  background-color: rgba(255, 255, 255, .6);
+  /* opacity: 0.5; */
+  font-size: 1.6em;
+  padding: 1em 2em;
+  border: none;
+  outline: none;
+  border-radius: 2em;
+  cursor: pointer;
+  margin-top: 10%;
+  font-weight: bolder;
+  color: rgb(2, 2, 2);
+}
+
+
+
+.start-screen button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.start-screen #player-names {
+  background-color: #ffffff;
+  font-size: 1.4em;
+  padding: 1em 1em;
+  border: none;
+  outline: none;
+  border-radius: 2em;
+  cursor: pointer;
+
+}
+
+.grid-row {
+  margin: 0 auto;
+  display: flex;
+}
+
+.grid-box {
+  width: 5em;
+  height: 5em;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(rgb(255, 255, 255) 1.37em, #416cea 1.43em);
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+.hide {
+  display: none;
+}
+
+#message {
+  margin: 1em;
+  color: #050505;
+  font-size: 2.2em;
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
